@@ -14,8 +14,9 @@ jobs:
     uses: ./.github/workflows/integrate.yaml
     secrets: inherit
 
-  # publish runs in parallel with tests, as we always publish in this situation
-  publish-charm:
-    name: Publish Charm
-    uses: ./.github/workflows/publish.yaml
-    secrets: inherit
+# TODO: Uncomment this if we pull this PR into canonical/knative-operators
+#  # publish runs in parallel with tests, as we always publish in this situation
+#  publish-charm:
+#    name: Publish Charm
+#    uses: ./.github/workflows/publish.yaml
+#    secrets: inherit
